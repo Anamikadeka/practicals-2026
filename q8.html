@@ -1,0 +1,24 @@
+<!DOCTYPEhtml>
+<htmllang="en">
+<head>
+    <metacharset="UTF-8">
+    <metaname="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <selectname="OS"id="OS">
+            <optionvalue="Windows">Windows</option>
+            <optionvalue="Linux">Linux</option>
+            <optionvalue="mac">MacOS</option>
+        </select>
+        <inputtype="button"id="btn"value="Submit">
+    </form>
+    <script>
+        const sElm = document.getElementById("OS");
+        document.getElementById("btn").addEventListener("click", () => {
+            document.body.innerHTML += sElm.value;
+        })
+    </script>
+</body>
+</html>

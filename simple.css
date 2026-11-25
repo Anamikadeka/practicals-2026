@@ -1,0 +1,22 @@
+<style>
+body {
+    font-family: Arial;
+    background-color: #f2f2f2;
+    text-align: centre;
+
+}
+h1{
+    color:blue;
+}
+p{
+    color:#f6f6;
+    font-size: 18px;
+}
+button {
+background-color: steelblue;
+color: White;
+padding: 8px 15px;
+border: none;
+border-radius: 5px;
+}
+</style>

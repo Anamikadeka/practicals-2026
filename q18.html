@@ -1,0 +1,20 @@
+<!-- Implement a function that changes the innerText of a paragraph element to display a
+random number between 1 and 10 every time a button is clicked -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>question-18</title>
+</head>
+<body>
+<p id="rand-para">click the button to get a number</p>
+<button onclick="generateRandom()">Roll</button>
+<script>
+function generateRandom(){
+const randomNum = Math.floor(Math.random() * 10) + 1;
+document.getElementById("rand-para").innerText = "Random Number : " + randomNum;
+}
+</script>
+</body>
+</html>

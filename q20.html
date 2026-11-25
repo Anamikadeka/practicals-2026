@@ -1,0 +1,31 @@
+<!-- Build a form with input fields for email, password and confirm password. When the
+form is submitted, use an alert to display a success message if the password and
+confirm password values matches, otherwise show an error alert. Use JavaScript for
+the validation. -->
+<!DOCTYPEhtml>
+<htmllang="en">
+<head>
+    <metacharset="UTF-8">
+    <metaname="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <formonsubmit="handleSubmit(event)">
+        <inputtype="email"name="email"id="email"placeholder="Email address">
+        <inputtype="password"name="pass"id="pass"placeholder="Password">
+        <inputtype="password"name="cpass"id="cpass"placeholder="Confirm Password">
+        <inputtype="submit"value="Submit">
+    </form>
+    <script>
+        const pass = document.getElementById('pass');
+        const cpass = document.getElementById('cpass');
+        function handleSubmit(e) {
+            e.preventDefault();
+            if (pass.value === cpass.value)
+                alert("Success");
+            else
+                alert("Error: Passwords don't match");
+        }
+    </script>
+</body>
+</html>

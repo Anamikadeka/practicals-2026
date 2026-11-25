@@ -1,0 +1,28 @@
+<!-- Create a button that, when clicked, appends a new paragraph element with a specific
+text content to an existing div element. -->
+<!DOCTYPEhtml>
+<htmllang="en">
+<head>
+    <metacharset="UTF-8">
+    <metaname="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 1pxsolidblack;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <buttonid="addBTN">Add Paragraph </button>
+    <divid="container"></div>
+    <script>
+        document.getElementById('addBTN').addEventListener('click', function () {
+            const p = document.createElement('p');
+            p.innerText = 'New dynamic paragraph appended successfully';
+            document.getElementById('container').appendChild(p)
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!-- Create a list of items. Add a click event listener to each item so that when clicked, the
+background color of the clicked item changes. -->
+<!DOCTYPEhtml>
+<htmllang="en">
+<head>
+    <metacharset="UTF-8">
+    <metaname="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+</head>
+<body>
+    <ulid="list">
+        <h2>My Lists of Items</h2>
+        <li>first item</li>
+        <li>second item</li>
+        <li>third item</li>
+        <li>fourth item</li>
+    </ul>
+    <script>
+        const list = document.getElementById('list');
+        list.addEventListener('click', (e) => {
+            e.target.style.backgroundColor = '#f00';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!-- Build a registration form with fields for name, email, password, date of birth, address
+and other such fields with a submit button. Include appropriate input types, labels and
+placeholders -->
+<!DOCTYPEhtml>
+<htmllang="en">
+<head>
+    <metacharset="UTF-8">
+    <metaname="viewport"content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <style>
+        body {
+            display: flex;
+            height: 100dvh;
+            justify-content: center;
+            align-items: center;
+        }
+        form {
+            width: max(50vw, 400px);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+        }
+        formdiv {
+            display: flex;
+            flex-direction: column;
+        }
+        formdivinput, textarea {
+            padding: 5px;
+            border-radius: 5px;
+        }
+        button {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <labelfor="name">Name:</label>
+            <inputtype="text"name="name"id="name"placeholder="John Doe">
+        </div>
+        <div>
+            <labelfor="email">Email:</label>
+            <inputtype="email"name="email"id="email"placeholder="mail@example.com">
+        </div>
+        <div>
+            <labelfor="password">Password</label>
+            <inputtype="password"name="password"id="password"placeholder="Choose a password">
+        </div>
+        <div>
+            <labelfor="dob">Date of birth</label>
+            <inputtype="date"name="dob"id="dob"placeholder="01-01-1970">
+        </div>
+        <div>
+            <labelfor="address">Address</label>
+            <textareaname="address"id="address"placeholder="Enter your address here"rows="5"></textarea>
+        </div>
+        <buttontype="submit">Submit</button>
+    </form>
+</body>
+</html>

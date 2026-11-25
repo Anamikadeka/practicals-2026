@@ -1,0 +1,34 @@
+<!-- . Build a form with input fields for name and email. When the form is submitted, use
+innerHTML to display a confirmation message with the entered name and email on
+the webpage. -->
+<!DOCTYPEhtml>
+<htmllang="en">
+<head>
+    <metacharset="UTF-8">
+    <metaname="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #displayArea {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <formid="userFrom"onsubmit="Submitf(event)">
+        <inputtype="text"id="uname"placeholder="Name required"><br>
+        <inputtype="email"id="uemail"placeholder="Email required"><br>
+        <buttonid="submit"type="submit"value="Submit">Submit</button>
+    </form>
+    <divid="displayArea"></div>
+    <script>
+        // document.getElementById('userForm').addEventListener('submit',
+            function Submitf(e) {
+                e.preventDefault();
+                const name = document.getElementById('uname').value;
+                const email = document.getElementById('uemail').value;
+                document.getElementById('displayArea').
+                    innerHTML = `<b>Success!</b> Confirmed: ${name} (${email})`;
+            }
+    </script>
+</body>
+</html>
